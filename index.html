@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+  </head>
+  <script>
+      if(document.documentElement.clientWidth>=640){
+          document.documentElement.style.fontSize='100px'
+      }else{
+          document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
+      }
+      window.onresize=function(){
+        if(document.documentElement.clientWidth>=640){
+          document.documentElement.style.fontSize='100px'
+        }else{
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
+        }
+      }
+  </script>
+  <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=IR4HN51YApGRLGDktlBNnFIDGApQdWQN"></script> -->
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
